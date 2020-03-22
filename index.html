@@ -1,0 +1,249 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.button {
+  background-color: hsla(0, 100%, 30%, 0.3); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Our schedule</h2>
+  <p>Click on the boxes below:</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:tan;">
+    Monday
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:brown;">
+    Tuesday
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    Wednesday
+  </div>
+   <div class="column" onclick="openTab('b4');" style="background:black;">
+    Thursday
+  </div>
+  </div>
+   
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup">Bed clean--6pm</span>
+</div>
+
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup1')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup1">Make a smoothie--6pm</span>
+</div>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup2')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup2">Not decided</span>
+</div>
+</div>
+<div id="b4" class="containerTab" style="display:none;background:grey">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup3')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup3">Not decided</span>
+</div>
+</div>
+
+<h1>Need to RSVP!!!</h1>
+<h3>If you think you are going to join the daily challenge, fill out this form and RSVP! Remember to mention the activity and your name in the comments</h3>
+
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Name:
+<input type="text" name="name"><br>
+<br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send" class="button button1">
+<input type="reset" value="Reset" class="button button1">
+</form>
+
+ <div class="column" onclick="openTab('b5');" style="background:tan;">
+    What is zoom?
+  </div>
+
+<div id="b5" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Zoom</h2>
+<h4>Access this link and sign in to attend the meetings that I will host</h4>
+
+ <h4>Zoom.com</h4>
+<div>
+
+</div>
+<script>
+function myFunction(popupfunctionid) {
+  var popup = document.getElementById(popupfunctionid);
+  popup.classList.toggle("show");
+}
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html> 
