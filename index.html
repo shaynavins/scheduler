@@ -127,6 +127,9 @@ body {
 
 <!-- Three columns -->
 <div class="row">
+  <div class="column" onclick="openTab('b0');" style="background:pink;">
+    Sunday
+  </div>
   <div class="column" onclick="openTab('b1');" style="background:tan;">
     Monday
   </div>
@@ -139,24 +142,67 @@ body {
    <div class="column" onclick="openTab('b4');" style="background:black;">
     Thursday
   </div>
+  <div class="column" onclick="openTab('b5');" style="background:grey;">
+    Friday
+  </div>
+  <div class="column" onclick="openTab('b6');" style="background:orange;">
+    Saturday
+  </div>
   </div>
    
 </div>
 
 <!-- Full-width columns: (hidden by default) -->
+<div id="b0" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup0')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup0">Bed clean--6pm</span>
+</div>
+<div>
+ Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Bed clean<br>
+Time: Mar 22, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/765354044">here</a><br>
+<br>
+Meeting ID: 765 354 044
+</div>
+</div>
+
 <div id="b1" class="containerTab" style="display:none;background:pink">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Activities</h2>
   <ul>
     <li>9:00 -- 11:00: school and/or breakfast time.</li>
-    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
     <li>1:00 -- 3:00: Lunch/freetime</li>
     <li>4:00 -- 5:00: personal time</li>
     <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
   </ul>
   <div class="popup" onclick="myFunction('myPopup')">What is the challenge of the day?(click here!)
-  <span class="popuptext" id="myPopup">Bed clean--6pm</span>
+  <span class="popuptext" id="myPopup">Yoga--6pm</span>
 </div>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Yoga <br>
+Time: Mar 23, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/477347770">here</a><br>
+<br>
+Meeting ID: 477 347 770<br>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
 
 </div>
 
@@ -165,7 +211,7 @@ body {
   <h2>Activities</h2>
   <ul>
     <li>9:00 -- 11:00: school and/or breakfast time.</li>
-    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
     <li>1:00 -- 3:00: Lunch/freetime</li>
     <li>4:00 -- 5:00: personal time</li>
     <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
@@ -173,6 +219,15 @@ body {
   <div class="popup" onclick="myFunction('myPopup1')">What is the challenge of the day?(click here!)
   <span class="popuptext" id="myPopup1">Make a smoothie--6pm</span>
 </div>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Smoothie challenge<br>
+Time: Mar 24, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/335865407">here</a><br>
+<br>
+Meeting ID: 335 865 407<br>
 </div>
 
 <div id="b3" class="containerTab" style="display:none;background:orange">
@@ -180,13 +235,23 @@ body {
  <h2>Activities</h2>
   <ul>
     <li>9:00 -- 11:00: school and/or breakfast time.</li>
-    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
     <li>1:00 -- 3:00: Lunch/freetime</li>
     <li>4:00 -- 5:00: personal time</li>
     <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
   </ul>
   <div class="popup" onclick="myFunction('myPopup2')">What is the challenge of the day?(click here!)
-  <span class="popuptext" id="myPopup2">Not decided</span>
+  <span class="popuptext" id="myPopup2">Creativity sparks--6:30pm</span>
+  Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Creativity Challenge<br>
+Time: Mar 25, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/961974647">here</a><br>
+<br>
+Meeting ID: 961 974 647<br>
+
 </div>
 </div>
 <div id="b4" class="containerTab" style="display:none;background:grey">
@@ -194,14 +259,75 @@ body {
  <h2>Activities</h2>
   <ul>
     <li>9:00 -- 11:00: school and/or breakfast time.</li>
-    <li>11:30 -- 1:00: Challenge to read. Record number of pages read evryday...Then share and compare</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
     <li>1:00 -- 3:00: Lunch/freetime</li>
     <li>4:00 -- 5:00: personal time</li>
     <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
   </ul>
   <div class="popup" onclick="myFunction('myPopup3')">What is the challenge of the day?(click here!)
-  <span class="popuptext" id="myPopup3">Not decided</span>
+  <span class="popuptext" id="myPopup3">Be a Teacher!</span>
 </div>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Be a teacher<br>
+Time: Mar 25, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/603167366">here</a><br>
+<br>
+Meeting ID: 603 167 366<br>
+
+</div>
+
+
+<div id="b5" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup4')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup4">Just talk!</span>
+</div>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Just talk<br>
+Time: Mar 26, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/629432427">here</a><br>
+<br>
+Meeting ID: 629 432 427<br>
+
+</div>
+
+<div id="b6" class="containerTab" style="display:none;background:brown">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <h2>Activities</h2>
+  <ul>
+    <li>9:00 -- 11:00: school and/or breakfast time.</li>
+    <li>11:30 -- 1:00: Challenge to read. Record number of pages read everyday...Then share and compare</li>
+    <li>1:00 -- 3:00: Lunch/freetime</li>
+    <li>4:00 -- 5:00: personal time</li>
+    <li>5:00 -- 7:00: Daily challenge with Zoom video</li>
+  </ul>
+  <div class="popup" onclick="myFunction('myPopup5')">What is the challenge of the day?(click here!)
+  <span class="popuptext" id="myPopup5">Hangman</span>
+</div>
+Shayna Vinoth is inviting you to a scheduled Zoom meeting.<br>
+<br>
+Topic: Hangman<br>
+Time: Mar 27, 2020 06:30 PM Eastern Time (US and Canada)<br>
+<br>
+Join Zoom Meeting<br>
+<a href="https://us04web.zoom.us/j/401669572">here</a><br>
+<br>
+Meeting ID: 401 669 572<br>
+<br>
 </div>
 
 <h1>Need to RSVP!!!</h1>
